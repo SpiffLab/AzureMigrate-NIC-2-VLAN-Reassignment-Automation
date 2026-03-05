@@ -1,0 +1,19 @@
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Sensitive
+*.secret
+*.key
+*.pfx
+
+# Local mapping files with real data
+nic-mapping-*.csv
+!examples/nic-mapping.csv
+!examples/nic-mapping.json

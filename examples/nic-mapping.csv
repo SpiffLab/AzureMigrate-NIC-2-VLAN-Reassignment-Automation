@@ -1,0 +1,6 @@
+VMName,NICName,LogicalNetworkName,LogicalNetworkResourceGroup
+APP-SERVER-01,NIC-1,VLAN-100-Mgmt,hci-networking-rg
+APP-SERVER-01,NIC-2,VLAN-200-App,hci-networking-rg
+APP-SERVER-01,NIC-3,VLAN-300-Data,hci-networking-rg
+DB-SERVER-01,NIC-1,VLAN-100-Mgmt,hci-networking-rg
+DB-SERVER-01,NIC-2,VLAN-300-Data,hci-networking-rg

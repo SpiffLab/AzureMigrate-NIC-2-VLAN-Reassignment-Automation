@@ -1,0 +1,17 @@
+[
+  {
+    "vmName": "APP-SERVER-01",
+    "nics": [
+      { "nicName": "NIC-1", "logicalNetwork": "VLAN-100-Mgmt", "logicalNetworkResourceGroup": "hci-networking-rg" },
+      { "nicName": "NIC-2", "logicalNetwork": "VLAN-200-App", "logicalNetworkResourceGroup": "hci-networking-rg" },
+      { "nicName": "NIC-3", "logicalNetwork": "VLAN-300-Data", "logicalNetworkResourceGroup": "hci-networking-rg" }
+    ]
+  },
+  {
+    "vmName": "DB-SERVER-01",
+    "nics": [
+      { "nicName": "NIC-1", "logicalNetwork": "VLAN-100-Mgmt", "logicalNetworkResourceGroup": "hci-networking-rg" },
+      { "nicName": "NIC-2", "logicalNetwork": "VLAN-300-Data", "logicalNetworkResourceGroup": "hci-networking-rg" }
+    ]
+  }
+]
