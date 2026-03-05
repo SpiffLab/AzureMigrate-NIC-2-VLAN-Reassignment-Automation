@@ -1,10 +1,10 @@
 # AzureMigrate NIC-to-VLAN Reassignment Automation
 
-Automate logical network reassignment for multi-NIC VMs migrated to **Azure Stack HCI (Azure Local)** via Azure Migrate.
+Automate logical network reassignment for multi-NIC VMs migrated to **Azure Local** via Azure Migrate.
 
 ## Problem
 
-When migrating VMs with multiple NICs from on-premises to Azure Stack HCI using Azure Migrate, all NICs land on a default logical network. Each NIC needs to be reassigned to the correct logical network (VLAN) post-migration to restore the original network segmentation.
+When migrating VMs with multiple NICs from on-premises to Azure Local using Azure Migrate, all NICs land on a default logical network. Each NIC needs to be reassigned to the correct logical network (VLAN) post-migration to restore the original network segmentation.
 
 ## Solution
 
@@ -20,7 +20,7 @@ This automation reads a NIC-to-logical-network mapping file and reassigns each N
 └─────────────────────┘                │
                                        ▼
                         ┌──────────────────────────────┐
-                        │  Azure Stack HCI (Azure Local)│
+                        │  Azure Local                  │
                         │                              │
                         │  VM: APP-SERVER-01            │
                         │  ├─ NIC1 → VLAN-100-Mgmt     │
@@ -82,7 +82,7 @@ az deployment group create \
 
 | Column | Required | Description |
 |--------|----------|-------------|
-| `VMName` | Yes | Name of the migrated VM on Azure Stack HCI |
+| `VMName` | Yes | Name of the migrated VM on Azure Local |
 | `NICName` | Yes | Name or index of the NIC to reassign |
 | `LogicalNetworkName` | Yes | Target logical network name |
 | `LogicalNetworkResourceGroup` | No | Resource group of the logical network (defaults to VM's resource group) |
@@ -116,7 +116,7 @@ az deployment group create \
 - Azure CLI or Azure PowerShell module
 - Contributor role on the resource group containing the migrated VMs
 - Reader role on the resource group containing the logical networks
-- Azure Stack HCI (Azure Local) cluster with logical networks configured
+- Azure Local cluster with logical networks configured
 
 ## License
 

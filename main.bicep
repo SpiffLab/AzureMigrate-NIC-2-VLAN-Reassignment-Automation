@@ -1,5 +1,5 @@
 // =============================================================================
-// NIC-to-Logical Network Reassignment for Azure Stack HCI Migrated VMs
+// NIC-to-Logical Network Reassignment for Azure Local Migrated VMs
 // =============================================================================
 // Updates network interfaces on migrated VMs to their target logical networks
 // based on a mapping array parameter.

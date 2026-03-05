@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-    Reassigns NIC logical networks on Azure Stack HCI VMs migrated via Azure Migrate.
+    Reassigns NIC logical networks on Azure Local VMs migrated via Azure Migrate.
 
 .DESCRIPTION
     Reads a CSV mapping file and updates each VM's network interface to the correct
-    logical network on Azure Stack HCI (Azure Local).
+    logical network on Azure Local.
 
 .PARAMETER MappingFile
     Path to the CSV mapping file with columns: VMName, NICName, LogicalNetworkName, LogicalNetworkResourceGroup.
